@@ -22,7 +22,7 @@ function Login() {
         }
 
         try{
-            const res = await axios.post("http://localhost:10000/login",obj);
+            const res = await axios.post("https://post-balkend.onrender.com/login",obj);
 
             if(res.data.status){
                 navigate("/home");

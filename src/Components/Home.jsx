@@ -15,7 +15,7 @@ function Home() {
         }
 
         try{
-            const res = await axios.post("http://localhost:10000/addpost",obj)
+            const res = await axios.post("https://post-balkend.onrender.com/addpost",obj)
             if(res.data.status){
                 alert("post added")
             }
@@ -24,7 +24,6 @@ function Home() {
                 console.log(e);
                 
         }
-
 
         
     }

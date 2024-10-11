@@ -25,7 +25,7 @@ function Signup() {
             }
 
             try{
-                const res = await axios.post("http://localhost:10000/signup",obj);
+                const res = await axios.post("https://post-balkend.onrender.com/signup",obj);
 
                 if(res.data.status){
                     navigate("/login");
